@@ -18,6 +18,8 @@ include(":androidApp")
 include(":common:core")
 include(":common:umbrella-ios")
 include(":common:umbrella-compose")
+include(":common:core-compose")
+include(":common:core-utils")
 
 include(":common:auth:api")
 include(":common:auth:presentation")

@@ -1,15 +1,16 @@
 plugins {
     id("com.android.application")
+    id("org.jetbrains.compose")
     kotlin("android")
 }
 
 android {
     namespace = "com.example.playzone_mobile.android"
-    compileSdk = 32
+    compileSdk = 33
     defaultConfig {
         applicationId = "com.example.playzone_mobile.android"
         minSdk = 21
-        targetSdk = 32
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
     }

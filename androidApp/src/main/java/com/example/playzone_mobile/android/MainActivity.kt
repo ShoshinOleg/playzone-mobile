@@ -16,28 +16,24 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import navigation.setupThemedNavigation
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val gamesRepository = instance<GamesRepository>()
-        CoroutineScope(context = Dispatchers.IO).launch {
-            val game = gamesRepository.fetchAllGames()
-            withContext(Dispatchers.Main) {
-                Log.e("Game", "Title: ${game.firstOrNull()?.title}")
-            }
-        }
 
-        setContent {
-            MyApplicationTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    GreetingView(TestClass().hello())
-                }
-            }
-        }
+        setupThemedNavigation()
+
+//        setContent {
+//            MyApplicationTheme {
+//                Surface(
+//                    modifier = Modifier.fillMaxSize(),
+//                    color = MaterialTheme.colors.background
+//                ) {
+//                    GreetingView(TestClass().hello())
+//                }
+//            }
+//        }
     }
 }
 
