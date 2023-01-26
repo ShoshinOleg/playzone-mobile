@@ -16,6 +16,7 @@ dependencyResolutionManagement {
 rootProject.name = "playzone-mobile"
 include(":androidApp")
 include(":common:core")
+include(":common:umbrella-core")
 include(":common:umbrella-ios")
 include(":common:umbrella-compose")
 include(":common:core-compose")

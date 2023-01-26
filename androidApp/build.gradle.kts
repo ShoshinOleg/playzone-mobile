@@ -35,6 +35,7 @@ android {
 dependencies {
     implementation(project(":common:core"))
     implementation(project(":common:games:api"))
+    implementation(project(":common:umbrella-core"))
     implementation(project(":common:umbrella-compose"))
     implementation("androidx.compose.ui:ui:1.2.1")
     implementation("androidx.compose.ui:ui-tooling:1.2.1")

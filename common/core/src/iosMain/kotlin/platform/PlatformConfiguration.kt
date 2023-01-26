@@ -1,3 +1,3 @@
 package platform
 
-actual class PlatformConfiguration
+actual class PlatformConfiguration constructor()

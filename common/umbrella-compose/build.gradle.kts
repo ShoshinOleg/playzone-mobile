@@ -7,6 +7,7 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
+                implementation(project(":common:umbrella-core"))
                 implementation(project(":common:core"))
                 implementation(project(":common:core-compose"))
                 implementation(project(":common:core-utils"))

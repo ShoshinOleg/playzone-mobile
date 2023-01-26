@@ -1,7 +1,7 @@
 package com.example.playzone_mobile.android
 
 import GamesRepository
-import TestClass
+//import TestClass
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity

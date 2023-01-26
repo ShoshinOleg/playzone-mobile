@@ -14,7 +14,7 @@ dependencies {
     implementation(Dependencies.Android.gradlePlugin)
     implementation(Dependencies.Compose.gradlePlugin)
     implementation(Dependencies.Kotlin.Serialization.gradlePlugin)
-    implementation(Dependencies.SqlDelight.gradlePlugin)
+//    implementation(Dependencies.SqlDelight.gradlePlugin)
 }
 
 kotlin {
