@@ -22,6 +22,11 @@ include(":common:umbrella-compose")
 include(":common:core-compose")
 include(":common:core-utils")
 
+include(":common:main:api")
+include(":common:main:presentation")
+include(":common:main:data")
+include(":common:main:compose")
+
 include(":common:auth:api")
 include(":common:auth:presentation")
 include(":common:auth:data")
